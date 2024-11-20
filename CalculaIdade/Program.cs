@@ -10,6 +10,17 @@ namespace CalculaIdade
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Calcular a idade");
+            Pessoa pessoa = new Pessoa();
+
+            Console.Write("Qual seu nome? ");
+            pessoa.Nome = Console.ReadLine();
+
+            Console.Write("Qual sua idade? ");
+            pessoa.AnoNasc = Convert.ToInt32(Console.ReadLine());
+
+            pessoa.ExibirDados();
+            Console.ReadKey();
         }
     }
 }
